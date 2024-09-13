@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evin Biju Thaikkattil's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Back arrow (hidden initially) -->
+    <div id="back-arrow" onclick="goBack()">&#8592;</div>
+
+    <!-- Name in the center-left corner -->
+    <div id="name" onclick="showMenu()">Evin Biju Thaikkattil</div>
+
+    <!-- Content list that appears after clicking the name -->
+    <ul id="content-list">
+        <li><a href="#" id="introduction-item" onclick="showIntroduction(event)">Introduction</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        <li><a href="#" onclick="showSection('hobbies')">Hobbies</a></li>
+    </ul>
+
+    <!-- Container for the topics branching out from Introduction -->
+    <div id="introduction-topics-container">
+        <!-- Introduction item for positioning -->
+        <div id="introduction-anchor">Introduction</div>
+        <div class="intro-topic" id="topic-summary" onclick="showDetail('summary')">Summary</div>
+        <div class="intro-topic" id="topic-core-competencies" onclick="showDetail('core-competencies')">Core Competencies</div>
+        <div class="intro-topic" id="topic-education" onclick="showDetail('education')">Education</div>
+        <div class="intro-topic" id="topic-projects" onclick="showDetail('projects')">Projects</div>
+        <div class="intro-topic" id="topic-experience" onclick="showDetail('experience')">Experience</div>
+        <div class="intro-topic" id="topic-achievements" onclick="showDetail('achievements')">Achievements</div>
+        <div class="intro-topic" id="topic-additional-education" onclick="showDetail('additional-education')">Additional Education & Certifications</div>
+        <!-- SVG for connecting lines -->
+        <svg id="intro-connections-svg"></svg>
+    </div>
+
+    <!-- Container for detailed CV sections -->
+    <div id="cv-details-container">
+        <!-- Detailed sections as before -->
+        <!-- Summary Section -->
+        <div class="cv-detail" id="detail-summary">
+            <h2>Summary</h2>
+            <p>I am a Mechatronics Engineering graduate with extensive expertise in electrical and mechanical concepts, control systems, microcontrollers, programming, and robotics...</p>
+            <!-- Include the rest of your summary here -->
+        </div>
+
+        <!-- (Other detailed sections similar to the above) -->
+        <!-- Core Competencies, Education, Projects, Experience, Achievements, Additional Education & Certifications -->
+        <!-- Include your detailed sections here with appropriate IDs -->
+    </div>
+
+    <!-- Other sections (Projects, Contact, Hobbies) -->
+    <div id="other-sections">
+        <!-- Projects Section -->
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <!-- Add your projects here or link to the projects in the CV details -->
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>LinkedIn: <a href="your-linkedin-url" target="_blank">your-linkedin-url</a></p>
+            <!-- Add more contact information as needed -->
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="section" id="hobbies">
+            <h2>Hobbies</h2>
+            <p><!-- Add your hobbies here --></p>
+        </div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
